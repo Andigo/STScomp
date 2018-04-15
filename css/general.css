@@ -849,6 +849,93 @@ footer .footer-dev a {
   color: #20B2AA;
 }
 
+.catalogue {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: auto;
+  margin-bottom: 15px;
+  font-family: Roboto;
+}
+
+.catalogue-wr {
+  height: auto;
+}
+
+.catalogue-part h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #20B2AA;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.catalogue-part-line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: auto;
+}
+
+.catalogue-part-item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(25% - 30px);
+  height: 400px!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -ms-flex-direction: column!important;
+  flex-direction: column!important;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+  background: url(../img/steelvlv.png) no-repeat center / cover;
+  cursor: pointer;
+}
+
+.catalogue-item-type {
+  width: 80%;
+  height: auto;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.catalogue-item-info {
+  width: 90%;
+  height: auto;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.catalogue-item-info span {
+  color: #fff;
+  background: #CD0000;
+  padding: 0 20px;
+  font-size: 1.4rem;
+}
+
 @media screen and (max-width: 960px) {
   header {
     padding-left: 15px;
@@ -963,6 +1050,11 @@ footer .footer-dev a {
 
   .price-wr a {
     font-size: 1.8rem;
+  }
+
+  .catalogue {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1130,6 +1222,11 @@ footer .footer-dev a {
   .price-wr i {
     font-size: 2.5rem;
   }
+
+  .catalogue {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -1244,5 +1341,10 @@ footer .footer-dev a {
 
   .price-wr a {
     font-size: 1rem;
+  }
+
+  .catalogue {
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
