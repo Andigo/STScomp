@@ -16,6 +16,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sriracha');
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700');
+
 @font-face {
   font-family: Roboto;
   /* Имя шрифта */
@@ -591,6 +593,7 @@ footer .footer-dev a {
   padding-left: 30px;
   padding-right: 30px;
   min-height: 500px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .contacts-wr {
@@ -657,17 +660,6 @@ footer .footer-dev a {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.messengers-wr-search {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.messengers-wr-search input {
-  max-width: 20%;
-  outline: none;
-  background: #00f;
 }
 
 .fa-telegram {
@@ -899,6 +891,7 @@ footer .footer-dev a {
   justify-content: flex-end !important;
   background: url(../img/steelvlv.png) no-repeat center / cover;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .catalogue-item-type {
@@ -931,9 +924,80 @@ footer .footer-dev a {
 
 .catalogue-item-info span {
   color: #fff;
-  background: #CD0000;
+  background: #4876FF;
   padding: 0 20px;
   font-size: 1.4rem;
+}
+
+.singlecat {
+  min-height: 500px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.singlecat-wr {
+  min-height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.singlecat-wr img {
+  width: 400px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.singlecat-wr h2 {
+  font-size: 2.5rem;
+  color: #20B2AA;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.singlecat-wr span {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.singlecat-wr span strong {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.singlecat-price {
+  width: 40%;
+  min-height: 70px;
+  color: #fff;
+  background: #4876FF;
+  margin-bottom: 40px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.singlecat-price p {
+  font-size: 2rem;
+}
+
+.singlecat-price strong {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 960px) {
@@ -1053,6 +1117,11 @@ footer .footer-dev a {
   }
 
   .catalogue {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .singlecat {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1227,6 +1296,35 @@ footer .footer-dev a {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .singlecat {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .singlecat-wr img {
+    width: 100%;
+  }
+
+  .singlecat-wr h2 {
+    font-size: 2rem;
+  }
+
+  .singlecat-wr span {
+    font-size: 1.4rem;
+  }
+
+  .singlecat-wr span strong {
+    font-size: 1.5rem;
+  }
+
+  .singlecat-price {
+    width: 90%;
+  }
+
+  .singlecat-price strong {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -1344,6 +1442,11 @@ footer .footer-dev a {
   }
 
   .catalogue {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .singlecat {
     padding-left: 7px;
     padding-right: 7px;
   }
